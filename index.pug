@@ -79,5 +79,59 @@ html(lang="ja")
                     span.business__list-ja マーケティング
                   a(href="#" class="btn__wh")
       section.news
-        
+        span.news__smltitle News
+        .news__box
+          dl.news__item
+            dt.news__item-dt
+              span.news__item-date 2022.08.01
+              span.news__item-tag news
+            dd.news__item-dd
+              p.news__item-text テキストテキストテキストテキストテキストテキスト
+            dt.news__item-dt
+              span.news__item-date 2022.08.02
+              span.news__item-tag news
+            dd.news__item-dd
+              p.news__item-text テキストテキストテキストテキストテキストテキスト
+            dt.news__item-dt
+              span.news__item-date 2022.08.03
+              span.news__item-tag news
+            dd.news__item-dd
+              p.news__item-text テキストテキストテキストテキストテキストテキスト
+          a(href="#" class="btn__bl") view  more
+      .content__flex
+        a(href="#" class="recruit")
+          .recruit__title
+            span.recruit__title-en Recruit
+            span.recruit__title-ja 弊社で働きたい方へ
+        a(href="#" class="contact")
+          .contact__title
+            span.contactt__title-en Contact
+            span.contact__title-ja お問い合わせはこちら
+      section.company
+        .wrapper
+          span.company__smltitle Company
+          .company__flex
+            a(href="#" class=".company__item")
+              img(src="src/img/information_pc.jpg", alt="")
+              .company__title
+                span.company__title-en Information
+                span.company__title-ja 会社概要
+            a(href="#" class=".company__item")
+              img(src="src/img/access_pc.jpg", alt="")
+              .company__title
+                span.company__title-en access
+                span.company__title-ja アクセス情報
+    footer.footer
+      p.footer__title PUZZLE
+      ul.footer__list
+        - let footerlist = ['Vision', 'Business', 'News', 'Recruit', 'Contact']
+          each item in footerlist
+            li.footer__list-item
+              a(href="#" class="footer__list-link") #{item}
+
+
+
+
+
+
 
