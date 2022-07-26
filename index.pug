@@ -8,13 +8,14 @@ html(lang="ja")
     title PUZZLE
   body
     header.header
-      .header__box
-        p.header__box-logo PUZZLE
-      ul.header__list
-        - let headerlist = ['Vision', 'Business', 'News', 'Recruit', 'Contact']
-          each item in headerlist
-            li.header__list-item
-              a(href="#" class="header__list-link") #{item}
+      .header__flex
+        .header__box
+          p.header__box-logo PUZZLE
+        ul.header__list
+          - let headerlist = ['Vision', 'Business', 'News', 'Recruit', 'Contact']
+            each item in headerlist
+              li.header__list-item
+                a(href="#" class="header__list-link") #{item}
     .bg
       .bg__box
         .bg__catch
@@ -38,48 +39,50 @@ html(lang="ja")
               | テキストテキストテキストテキストテキストテキスト
               br
               | テキストテキストテキストテキストテキストテキスト
-            a(href="#" class="btn__bl") view more
-      section.business.wrapper
-        .business__flex
-          .business__textbox
-            span.business__smltitle Business
-            h1.business__lartitle Become a 
-              br
-              | web professional
-            .business__subtitle webのプロフェッショナルになろう
-            p.business__text テキストテキストテキストテキストテキストテキスト
-              br
-              | テキストテキストテキストテキストテキストテキスト
-              br
-              | テキストテキストテキストテキストテキストテキスト
-            a(href="#" class="btn__bl") view more
+            a(href="#" class="vision__btn-bl") view more
+      section.business
+        .wrapper
+          .business__flex
+            .business__textbox
+              span.business__smltitle Business
+              h1.business__lartitle Become a 
+                br
+                | web professional
+              .business__subtitle webのプロフェッショナルになろう
+              p.business__text テキストテキストテキストテキストテキストテキスト
+                br
+                | テキストテキストテキストテキストテキストテキスト
+                br
+                | テキストテキストテキストテキストテキストテキスト
+              a(href="#" class="business__btn-bl") view more
             .business__list
               a(href="#" class="business__list-item")
-                img(src="src/img/Business_1_pc.jpg", alt="")
+                img(src="src/img/Business_1_pc.jpg", alt="" class="business__list-img")
                 .business__list-flex
                   span.business__list-number 01
                   .business__list-title
                     span.business__list-en Engineering
-                    span.business__list-ja エンジニアリング・フロントエンド・サーバーサイド
-                  a(href="#" class="btn__wh") 
+                    span.business__list-ja エンジニアリング
+                  a(href="#" class="business__btn-wh") view more
               a(href="#" class="business__list-item")
-                img(src="src/img/Business_2_pc.jpg", alt="")
+                img(src="src/img/Business_2_pc.jpg", alt="" class="business__list-img")
                 .business__list-flex
                   span.business__list-number 02
                   .business__list-title
                     span.business__list-en Designer
-                    span.business__list-ja 動画クリエーター・グラフィックデザイン
-                  a(href="#" class="btn__wh")
+                    span.business__list-ja デザイナー
+                  a(href="#" class="business__btn-wh") view more
               a(href="#" class="business__list-item")
-                img(src="src/img/Business_3_pc.jpg", alt="")
+                img(src="src/img/Business_3_pc.jpg", alt="" class="business__list-img")
                 .business__list-flex
                   span.business__list-number 03
                   .business__list-title
                     span.business__list-en Marketing
                     span.business__list-ja マーケティング
-                  a(href="#" class="btn__wh")
-      section.news
-        span.news__smltitle News
+                  a(href="#" class="business__btn-wh") view more
+      section.news.wrapper
+        .news__textbox 
+          span.news__smltitle News
         .news__box
           dl.news__item
             dt.news__item-dt
@@ -97,7 +100,8 @@ html(lang="ja")
               span.news__item-tag news
             dd.news__item-dd
               p.news__item-text テキストテキストテキストテキストテキストテキスト
-          a(href="#" class="btn__bl") view  more
+          .news__btn
+            a(href="#" class="news__btn-bl") view  more
       .content__flex
         a(href="#" class="recruit")
           .recruit__title

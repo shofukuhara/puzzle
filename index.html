@@ -9,16 +9,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__box">
-        <p class="header__box-logo">PUZZLE</p>
+      <div class="header__flex">
+        <div class="header__box">
+          <p class="header__box-logo">PUZZLE</p>
+        </div>
+        <ul class="header__list">
+          <li class="header__list-item"><a class="header__list-link" href="#">Vision</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#">Business</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#">News</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#">Recruit</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#">Contact</a></li>
+        </ul>
       </div>
-      <ul class="header__list">
-        <li class="header__list-item"><a class="header__list-link" href="#">Vision</a></li>
-        <li class="header__list-item"><a class="header__list-link" href="#">Business</a></li>
-        <li class="header__list-item"><a class="header__list-link" href="#">News</a></li>
-        <li class="header__list-item"><a class="header__list-link" href="#">Recruit</a></li>
-        <li class="header__list-item"><a class="header__list-link" href="#">Contact</a></li>
-      </ul>
     </header>
     <div class="bg">
       <div class="bg__box">
@@ -36,30 +38,33 @@
           <div class="vision__textbox"><span class="vision__smltitle">Vision</span>
             <h1 class="vision__lartitle">Let's go the way <br>we want to go</h1>
             <div class="vision__subtitle">自分の進みたい道に進もう</div>
-            <p class="vision__text">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p><a class="btn__bl" href="#">view more</a>
+            <p class="vision__text">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p><a class="vision__btn-bl" href="#">view more</a>
           </div>
         </div>
       </section>
-      <section class="business wrapper">
-        <div class="business__flex">
-          <div class="business__textbox"><span class="business__smltitle">Business</span>
-            <h1 class="business__lartitle">Become a <br>web professional</h1>
-            <div class="business__subtitle">webのプロフェッショナルになろう</div>
-            <p class="business__text">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p><a class="btn__bl" href="#">view more</a>
-            <div class="business__list"><a class="business__list-item" href="#"><img src="src/img/Business_1_pc.jpg" alt="">
+      <section class="business">
+        <div class="wrapper">
+          <div class="business__flex">
+            <div class="business__textbox"><span class="business__smltitle">Business</span>
+              <h1 class="business__lartitle">Become a <br>web professional</h1>
+              <div class="business__subtitle">webのプロフェッショナルになろう</div>
+              <p class="business__text">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p><a class="business__btn-bl" href="#">view more</a>
+            </div>
+            <div class="business__list"><a class="business__list-item" href="#"><img class="business__list-img" src="src/img/Business_1_pc.jpg" alt="">
                 <div class="business__list-flex"><span class="business__list-number">01</span>
-                  <div class="business__list-title"><span class="business__list-en">Engineering</span><span class="business__list-ja">エンジニアリング・フロントエンド・サーバーサイド</span></div><a class="btn__wh" href="#"> </a>
-                </div></a><a class="business__list-item" href="#"><img src="src/img/Business_2_pc.jpg" alt="">
+                  <div class="business__list-title"><span class="business__list-en">Engineering</span><span class="business__list-ja">エンジニアリング</span></div><a class="business__btn-wh" href="#">view more</a>
+                </div></a><a class="business__list-item" href="#"><img class="business__list-img" src="src/img/Business_2_pc.jpg" alt="">
                 <div class="business__list-flex"><span class="business__list-number">02</span>
-                  <div class="business__list-title"><span class="business__list-en">Designer</span><span class="business__list-ja">動画クリエーター・グラフィックデザイン</span></div><a class="btn__wh" href="#"></a>
-                </div></a><a class="business__list-item" href="#"><img src="src/img/Business_3_pc.jpg" alt="">
+                  <div class="business__list-title"><span class="business__list-en">Designer</span><span class="business__list-ja">デザイナー</span></div><a class="business__btn-wh" href="#">view more</a>
+                </div></a><a class="business__list-item" href="#"><img class="business__list-img" src="src/img/Business_3_pc.jpg" alt="">
                 <div class="business__list-flex"><span class="business__list-number">03</span>
-                  <div class="business__list-title"><span class="business__list-en">Marketing</span><span class="business__list-ja">マーケティング</span></div><a class="btn__wh" href="#"></a>
+                  <div class="business__list-title"><span class="business__list-en">Marketing</span><span class="business__list-ja">マーケティング</span></div><a class="business__btn-wh" href="#">view more</a>
                 </div></a></div>
           </div>
         </div>
       </section>
-      <section class="news"><span class="news__smltitle">News</span>
+      <section class="news wrapper">
+        <div class="news__textbox"> <span class="news__smltitle">News</span></div>
         <div class="news__box">
           <dl class="news__item">
             <dt class="news__item-dt"><span class="news__item-date">2022.08.01</span><span class="news__item-tag">news</span></dt>
@@ -74,7 +79,8 @@
             <dd class="news__item-dd">
               <p class="news__item-text">テキストテキストテキストテキストテキストテキスト</p>
             </dd>
-          </dl><a class="btn__bl" href="#">view  more</a>
+          </dl>
+          <div class="news__btn"><a class="news__btn-bl" href="#">view  more</a></div>
         </div>
       </section>
       <div class="content__flex"><a class="recruit" href="#">
