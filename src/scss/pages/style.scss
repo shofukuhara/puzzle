@@ -54,7 +54,12 @@ body {
       padding-left: 80px;
       &-logo {
         font-size: 4rem;
-        color: v.$wh
+        color: v.$wh;
+        transition: 0.5s ease;
+      }
+      &-logo.scroll {
+        color: v.$bl;
+        transition: 0.5s ease;
       }
     }
     &__list {
@@ -64,9 +69,31 @@ body {
       padding-right: 80px;
       &-item {
         margin-left: 40px;
+        position: relative;
+        &:hover {
+          &::after {
+            width: 100%;
+            transition: 0.3s ease;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -6px;
+          left: 0;
+          background-color: v.$org;
+          transition: 0.3s ease;
+        }
       }
       &-link {
         color: v.$wh;
+        transition: 0.5s ease;
+      }
+      &-link.scroll {
+        transition: 0.5s ease;
+        color: v.$bl;
       }
     }
   }
