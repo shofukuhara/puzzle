@@ -328,9 +328,11 @@ main {
         padding-top: 120px;
         z-index: 2;
         &-item {
+          display: block;
         }
         &-img {
           width: 100%;
+          vertical-align: bottom;
         }
         &-flex {
           width: 100%;
@@ -365,25 +367,13 @@ main {
         }
       } 
       &__btn-wh {
+        height: 100%;
+        display: block;
         color: v.$wh;
         position: relative;
         line-height: 46px;
         padding-right: 80px;
         transition: 0.3s ease;
-        &:hover {
-          color: v.$org;
-          transition: 0.3s ease;
-          &::before {
-            background-color: v.$org;
-            border: none;
-            transition: 0.3s ease;
-          }
-          &::after {
-            border-top: 2px solid v.$wh;
-            border-right: 2px solid v.$wh;
-            transition: 0.3s ease;
-          }
-        }
         &::before {
           content: "";
           width: 46px;
@@ -392,6 +382,7 @@ main {
           border-radius: 50%;
           display: inline-block;
           position: absolute;
+          top: 0;
           right: 0;
           transition: 0.3s ease;
         }
@@ -502,6 +493,277 @@ main {
           right: 20px;
           transition: 0.3s ease;
         }
+      }
+    }
+  }
+  .content {
+    @include m.mq('sp') {
+      
+    }
+    @include m.mq('tab') {
+      
+    }
+    @include m.mq('pc') {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 160px;
+      .recruit {
+        background-image: url(/src/img/recruit_pc.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
+        position: relative;
+        &:hover {
+          &::before {
+            background-color: v.$org;
+            border: none;
+            transition: 0.3s ease;
+          }
+          &::after {
+            border-top: 2px solid v.$wh;
+            border-right: 2px solid v.$wh;
+            transition: 0.3s ease;
+          }
+        }
+        &::before {
+          content: "";
+          width: 46px;
+          height: 46px;
+          border: 1px solid v.$gry;
+          border-radius: 50%;
+          display: inline-block;
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          transition: 0.3s ease;
+        }
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid v.$wh;
+          border-right: 2px solid v.$wh;
+          transform: rotate(45deg);
+          position: absolute;
+          bottom: 40px;
+          right: 40px;
+          transition: 0.3s ease;
+        }
+        &__title {
+          position: absolute;
+          bottom: 20px;
+          left: 40px;
+          &-en {
+            display: block;
+            color: v.$wh;
+            font-size: 3rem;
+          }
+          &-ja {
+            display: block;
+            color: v.$wh;
+          }
+        }
+      }
+      .contact {
+        background-image: url(/src/img/contact_pc.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
+        position: relative;
+        &:hover {
+          &::before {
+            background-color: v.$org;
+            border: none;
+            transition: 0.3s ease;
+          }
+          &::after {
+            border-top: 2px solid v.$wh;
+            border-right: 2px solid v.$wh;
+            transition: 0.3s ease;
+          }
+        }
+        &::before {
+          content: "";
+          width: 46px;
+          height: 46px;
+          border: 1px solid v.$gry;
+          border-radius: 50%;
+          display: inline-block;
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          transition: 0.3s ease;
+        }
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid v.$wh;
+          border-right: 2px solid v.$wh;
+          transform: rotate(45deg);
+          position: absolute;
+          bottom: 40px;
+          right: 40px;
+          transition: 0.3s ease;
+        }
+        &__title {
+          position: absolute;
+          bottom: 20px;
+          left: 40px;
+          &-en {
+            display: block;
+            color: v.$wh;
+            font-size: 3rem;
+          }
+          &-ja {
+            display: block;
+            color: v.$wh;
+          }
+        }
+      }
+    }
+  }
+  .company {
+    @include m.mq('sp') {
+      
+    }
+    @include m.mq('tab') {
+      
+    }
+    @include m.mq('pc') {
+      background-image: url(/src/img/company_pc.png);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 700px;
+      position: relative;
+      &__smltitle {
+        font-size: v.$FontPcSmltitle;
+        color: v.$wh;
+        display: block;
+        padding-left: 16px;
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+        top: 80px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 25%;
+          left: 0;
+          width: 8px;
+          height: 8px;
+          background-color: v.$org;
+          border-radius: 50%;
+        }
+      }
+      &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -36%);
+      }
+      &__item {
+        width: 36%;
+        &:hover {
+          color: v.$org;
+          transition: 0.3s ease;
+          .company__title {
+            &::before {
+              background-color: v.$org;
+              border: none;
+              transition: 0.3s ease;
+            }
+            &::after {
+              border-top: 2px solid v.$wh;
+              border-right: 2px solid v.$wh;
+              transition: 0.3s ease;
+            }
+          }
+        }
+      }
+      &__img {
+        width: 100%;
+      }
+      &__title {
+        border-bottom: 1px solid v.$wh;
+        padding-bottom: 20px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 46px;
+          height: 46px;
+          border: 1px solid v.$gry;
+          border-radius: 50%;
+          display: inline-block;
+          position: absolute;
+          top: 20px;
+          right: 0;
+          transition: 0.3s ease;
+        }
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid v.$wh;
+          border-right: 2px solid v.$wh;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 40px;
+          right: 20px;
+          transition: 0.3s ease;
+        }
+        &-en {
+          display: block;
+          color: v.$wh;
+          font-size: 3rem;
+        }
+        &-ja {
+          display: block;
+          color: v.$wh;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    background-color: v.$bl;
+    padding: 80px 0;
+    &__flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__title {
+      font-size: 3rem;
+      color: v.$wh;
+    }
+    &__list {
+      display: flex;
+      &-item {
+        margin-left: 40px;
+      }
+      &-link {
+        color: v.$wh;
       }
     }
   }

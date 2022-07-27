@@ -102,36 +102,37 @@ html(lang="ja")
               p.news__item-text テキストテキストテキストテキストテキストテキスト
           .news__btn
             a(href="#" class="news__btn-bl") view  more
-      .content__flex
+      .content
         a(href="#" class="recruit")
           .recruit__title
             span.recruit__title-en Recruit
             span.recruit__title-ja 弊社で働きたい方へ
         a(href="#" class="contact")
           .contact__title
-            span.contactt__title-en Contact
+            span.contact__title-en Contact
             span.contact__title-ja お問い合わせはこちら
       section.company
         .wrapper
           span.company__smltitle Company
           .company__flex
-            a(href="#" class=".company__item")
-              img(src="src/img/information_pc.jpg", alt="")
+            a(href="#" class="company__item")
+              img(src="src/img/information_pc.jpg", alt="" class="company__img")
               .company__title
                 span.company__title-en Information
                 span.company__title-ja 会社概要
-            a(href="#" class=".company__item")
-              img(src="src/img/access_pc.jpg", alt="")
+            a(href="#" class="company__item")
+              img(src="src/img/access_pc.jpg", alt="" class="company__img")
               .company__title
                 span.company__title-en access
                 span.company__title-ja アクセス情報
     footer.footer
-      p.footer__title PUZZLE
-      ul.footer__list
-        - let footerlist = ['Vision', 'Business', 'News', 'Recruit', 'Contact']
-          each item in footerlist
-            li.footer__list-item
-              a(href="#" class="footer__list-link") #{item}
+      .footer__flex.wrapper
+        p.footer__title PUZZLE
+        ul.footer__list
+          - let footerlist = ['Vision', 'Business', 'News', 'Recruit', 'Contact']
+            each item in footerlist
+              li.footer__list-item
+                a(href="#" class="footer__list-link") #{item}
 
 
 
