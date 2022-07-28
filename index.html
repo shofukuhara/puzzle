@@ -13,6 +13,8 @@
         <div class="header__box">
           <p class="header__box-logo">PUZZLE</p>
         </div>
+        <div class="header__hamburger"><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span>
+        </div>
         <ul class="header__list">
           <li class="header__list-item"><a class="header__list-link" href="#">Vision</a></li>
           <li class="header__list-item"><a class="header__list-link" href="#">Business</a></li>
@@ -24,7 +26,7 @@
     </header>
     <div class="bg">
       <div class="bg__box">
-        <div class="bg__catch"><span class="bg__catch-en">Connecting people</span><span class="bg__catch-ja">人と人を繋ぐ会社です。</span></div>
+        <div class="bg__catch"><span class="bg__catch-en">Connecting <br class="sp">people</span><span class="bg__catch-ja">人と人を繋ぐ会社です。</span></div>
       </div>
     </div>
     <main>
@@ -32,7 +34,9 @@
         <div class="vision__flex">
           <div class="vision__imgbox">
             <picture>
-              <source media="(min-width: 1025px)" srcset="src/img/vision_pc.jpg"><img class="vision__imgbox-img" src="src/img/vision_pc.jpg" alt="">
+              <source media="(min-width: 1025px)" srcset="src/img/vision_pc.jpg">
+              <source media="(min-width: 600px) and (max-width: 1025px)" srcset="src/img/vision_pc.jpg">
+              <source media="(max-width: 599px)" srcset="src/img/vision_sp.jpg"><img class="vision__imgbox-img" src="src/img/vision_pc.jpg" alt="">
             </picture>
           </div>
           <div class="vision__textbox"><span class="vision__smltitle">Vision</span>
@@ -66,20 +70,21 @@
       <section class="news wrapper">
         <div class="news__textbox"> <span class="news__smltitle">News</span></div>
         <div class="news__box">
-          <dl class="news__item">
-            <dt class="news__item-dt"><span class="news__item-date">2022.08.01</span><span class="news__item-tag">news</span></dt>
-            <dd class="news__item-dd">
-              <p class="news__item-text">テキストテキストテキストテキストテキストテキスト</p>
-            </dd>
-            <dt class="news__item-dt"><span class="news__item-date">2022.08.02</span><span class="news__item-tag">news</span></dt>
-            <dd class="news__item-dd">
-              <p class="news__item-text">テキストテキストテキストテキストテキストテキスト</p>
-            </dd>
-            <dt class="news__item-dt"><span class="news__item-date">2022.08.03</span><span class="news__item-tag">news</span></dt>
-            <dd class="news__item-dd">
-              <p class="news__item-text">テキストテキストテキストテキストテキストテキスト</p>
-            </dd>
-          </dl>
+          <dl class="news__item"><a href="#">
+              <dt class="news__item-dt"><span class="news__item-date">2022.08.01</span><span class="news__item-tag">news</span></dt>
+              <dd class="news__item-dd">
+                <p class="news__item-text">テキストテキストテキストテキストテキストテキスト</p>
+              </dd></a></dl>
+          <dl class="news__item"><a href="#">
+              <dt class="news__item-dt"><span class="news__item-date">2022.08.02</span><span class="news__item-tag">news</span></dt>
+              <dd class="news__item-dd">
+                <p class="news__item-text">テキストテキストテキストテキストテキストテキスト</p>
+              </dd></a></dl>
+          <dl class="news__item"><a href="#">
+              <dt class="news__item-dt"><span class="news__item-date">2022.08.03</span><span class="news__item-tag">news</span></dt>
+              <dd class="news__item-dd">
+                <p class="news__item-text">テキストテキストテキストテキストテキストテキスト</p>
+              </dd></a></dl>
           <div class="news__btn"><a class="news__btn-bl" href="#">view  more</a></div>
         </div>
       </section>

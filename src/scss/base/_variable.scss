@@ -10,3 +10,7 @@ $FontPcText: 1.4rem;
 $FontPcSmltitle: 1.6rem;
 $FontPcLartitle: 5rem;
 $FontPcSubtitle: 2rem;
+
+$FontTabText: calc(1.2rem + 4 * (100vw - 600px) / 424);
+$FontTabLartitle: calc(3rem + 4 * (100vw - 600px) / 424);
+$FontTabSubtitle: calc(1.5rem + 4 * (100vw - 600px) / 424);

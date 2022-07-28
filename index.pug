@@ -11,6 +11,9 @@ html(lang="ja")
       .header__flex
         .header__box
           p.header__box-logo PUZZLE
+        .header__hamburger
+          - for (let x = 0; x < 3; x++)
+            span.header__hamburger-line
         ul.header__list
           - let headerlist = ['Vision', 'Business', 'News', 'Recruit', 'Contact']
             each item in headerlist
@@ -19,7 +22,9 @@ html(lang="ja")
     .bg
       .bg__box
         .bg__catch
-          span.bg__catch-en Connecting people
+          span.bg__catch-en Connecting 
+            br.sp
+            | people
           span.bg__catch-ja 人と人を繋ぐ会社です。
     main
       section.vision
@@ -27,6 +32,8 @@ html(lang="ja")
           .vision__imgbox
             picture
               source(media="(min-width: 1025px)", srcset="src/img/vision_pc.jpg")
+              source(media="(min-width: 600px) and (max-width: 1025px)", srcset="src/img/vision_pc.jpg")
+              source(media="(max-width: 599px)", srcset="src/img/vision_sp.jpg")
               img(src="src/img/vision_pc.jpg", alt="" class="vision__imgbox-img")
           .vision__textbox
             span.vision__smltitle Vision
@@ -85,21 +92,26 @@ html(lang="ja")
           span.news__smltitle News
         .news__box
           dl.news__item
-            dt.news__item-dt
-              span.news__item-date 2022.08.01
-              span.news__item-tag news
-            dd.news__item-dd
-              p.news__item-text テキストテキストテキストテキストテキストテキスト
-            dt.news__item-dt
-              span.news__item-date 2022.08.02
-              span.news__item-tag news
-            dd.news__item-dd
-              p.news__item-text テキストテキストテキストテキストテキストテキスト
-            dt.news__item-dt
-              span.news__item-date 2022.08.03
-              span.news__item-tag news
-            dd.news__item-dd
-              p.news__item-text テキストテキストテキストテキストテキストテキスト
+            a(href="#")
+              dt.news__item-dt
+                  span.news__item-date 2022.08.01
+                  span.news__item-tag news
+              dd.news__item-dd
+                p.news__item-text テキストテキストテキストテキストテキストテキスト
+          dl.news__item
+            a(href="#")
+              dt.news__item-dt
+                span.news__item-date 2022.08.02
+                span.news__item-tag news
+              dd.news__item-dd
+                p.news__item-text テキストテキストテキストテキストテキストテキスト
+          dl.news__item
+            a(href="#")
+              dt.news__item-dt
+                span.news__item-date 2022.08.03
+                span.news__item-tag news
+              dd.news__item-dd
+                p.news__item-text テキストテキストテキストテキストテキストテキスト
           .news__btn
             a(href="#" class="news__btn-bl") view  more
       .content

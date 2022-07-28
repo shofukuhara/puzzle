@@ -15,3 +15,11 @@ window.addEventListener("scroll", function () {
     });
   }
 });
+
+const hamburger = document.querySelector(".header__hamburger");
+const hamburgerList = document.querySelector(".header__list");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("active");
+  hamburgerList.classList.toggle("active");
+});
