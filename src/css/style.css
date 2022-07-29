@@ -219,14 +219,14 @@ html {
     height: 100vh;
     background-color: #FFB010;
     text-align: left;
-    padding-top: 140px;
+    padding-top: 100px;
   }
   .header__list-item {
     list-style-type: none;
-    padding: 24px 0;
+    padding: 18px 0;
     width: 80%;
     margin: 0 auto;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.289);
   }
   .header__list-link {
     display: block;
@@ -467,10 +467,11 @@ html {
   .bg__catch-en {
     display: block;
     font-size: calc(3rem + 4 * (100vw - 320px) / 379);
+    line-height: 1.2;
   }
   .bg__catch-ja {
     display: block;
-    font-size: 2.4rem;
+    font-size: calc(2rem + 4 * (100vw - 320px) / 379);
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1025px) {
@@ -2009,11 +2010,11 @@ html {
 }
 @media screen and (max-width: 599px) {
   main .company {
-    background-image: url(/src/img/company_pc.png);
+    background-image: url(/src/img/company_sp.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 700px;
+    height: calc(600px + 500 * (100vw - 320px) / 279);
     position: relative;
   }
   main .company__smltitle {
@@ -2024,7 +2025,7 @@ html {
     font-weight: bold;
     position: relative;
     z-index: 2;
-    top: 80px;
+    top: 48px;
   }
   main .company__smltitle::after {
     content: "";
@@ -2041,8 +2042,8 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -36%);
-            transform: translate(-50%, -36%);
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
   }
   main .company__item {
     width: 100%;
@@ -2296,28 +2297,27 @@ html {
 @media screen and (max-width: 599px) {
   .footer {
     background-color: #191101;
-    padding: 80px 0;
-  }
-  .footer__flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    padding: 40px 0;
   }
   .footer__title {
     font-size: 3rem;
     color: #fff;
+    margin-bottom: 24px;
+  }
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__list-item {
-    margin-left: 40px;
+    width: 33%;
+    margin-bottom: 16px;
   }
   .footer__list-link {
     color: #fff;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1025px) {
