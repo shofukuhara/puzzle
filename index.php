@@ -11,7 +11,7 @@
         <picture>
           <source media="(min-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/src/img/vision_pc.jpg">
           <source media="(min-width: 600px) and (max-width: 1025px)" srcset="<?php echo get_template_directory_uri(); ?>/src/img/vision_pc.jpg">
-          <source media="(max-width: 599px)" srcset="src/img/vision_sp.jpg"><img class="vision__imgbox-img" src="<?php echo get_template_directory_uri(); ?>/src/img/vision_pc.jpg" alt="">
+          <source media="(max-width: 599px)" srcset="<?php echo get_template_directory_uri(); ?>/src/img/vision_sp.jpg"><img class="vision__imgbox-img" src="<?php echo get_template_directory_uri(); ?>/src/img/vision_pc.jpg" alt="">
         </picture>
       </div>
       <div class="vision__textbox"><span class="vision__smltitle">Vision</span>
