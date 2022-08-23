@@ -1105,6 +1105,17 @@ main {
         z-index: 2;
         &-item {
           display: block;
+          &:hover {
+            .business__btn-wh {
+              color: v.$bl;
+              transition: 0.3s ease;
+              &::before {
+                border: none;
+                background-color: v.$bl;
+                transition: 0.3s ease;
+              }
+            }
+          }
         }
         &-img {
           width: 100%;

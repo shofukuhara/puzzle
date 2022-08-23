@@ -1269,6 +1269,17 @@ html {
   main .business__list-item {
     display: block;
   }
+  main .business__list-item:hover .business__btn-wh {
+    color: #191101;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  main .business__list-item:hover .business__btn-wh::before {
+    border: none;
+    background-color: #191101;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
   main .business__list-img {
     width: 100%;
     vertical-align: bottom;
